@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".news_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            android:src="@drawable/corona" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_margin="10dp"
+            android:textSize="19sp"
+            android:textColor="#fff"
+            android:text="Maharashtra on Saturday recorded 2,940 new coronavirus disease (Covid-19) cases, its second-highest spike in a day so far."
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="@color/greenColor"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:textColor="#fff"
+            android:text="38-year-old diabetic woman with severe symptoms makes dramatus-but-bengaluru-is-ready-for-the-bloodfight/articleshow/76224925.cms?utm_source=contentofinterest utm_medium=text utm_campaign=cppst"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:textColor="#fff"
+            android:text="38-year-old diabetic woman with severe symptoms makes dramatus-but-bengaluru-is-ready-for-the-bloodfight/articleshow/76224925.cms?utm_source=contentofinterest utm_medium=text utm_campaign=cppst"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:text="38-year-old diabetic woman with severe symptoms makes dramatus-but-bengaluru-is-ready-for-the-bloodfight/articleshow/76224925.cms?utm_source=contentofinterest utm_medium=text utm_campaign=cppst"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:textColor="#fff"
+            android:text="38-year-old diabetic woman with severe symptoms makes dramatus-but-bengaluru-is-ready-for-the-bloodfight/articleshow/76224925.cms?utm_source=contentofinterest utm_medium=text utm_campaign=cppst"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:text="38-year-old diabetic woman with severe symptoms makes dramatus-but-bengaluru-is-ready-for-the-bloodfight/articleshow/76224925.cms?utm_source=contentofinterest utm_medium=text utm_campaign=cppst"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:text="38-year-old diabetic woman with severe symptoms makes dramatus-but-bengaluru-is-ready-for-the-bloodfight/articleshow/76224925.cms?utm_source=contentofinterest utm_medium=text utm_campaign=cppst"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:text="38-year-old diabetic woman with severe symptoms makes dramatus-but-bengaluru-is-ready-for-the-bloodfight/articleshow/76224925.cms?utm_source=contentofinterest utm_medium=text utm_campaign=cppst"/>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

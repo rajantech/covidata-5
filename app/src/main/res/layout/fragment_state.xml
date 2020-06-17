@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<ProgressBar
+    android:id="@+id/progressId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+</ProgressBar>
+    <LinearLayout
+        android:id="@+id/linearId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="State_Name"
+            android:textColor="#fff"
+            android:padding="20dp"
+            android:id="@+id/statename"
+            android:textSize="25sp"
+            android:background="@drawable/edit"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/edit"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Confirmed Cases"
+                android:id="@+id/sa"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:layout_marginLeft="0dp"
+                android:textSize="20sp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6,546,842"
+                android:textAlignment="center"
+                android:id="@+id/totalConfirmed"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#43E272"
+                android:layout_marginLeft="30dp"
+                android:textSize="30sp"
+                android:gravity="center_horizontal" />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/edit"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Active Cases"
+                android:id="@+id/sa1"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:layout_marginLeft="0dp"
+                android:textSize="20sp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6,546,842"
+                android:textAlignment="center"
+                android:id="@+id/totalactive"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#43E272"
+                android:layout_marginLeft="30dp"
+                android:textSize="30sp"
+                android:gravity="center_horizontal" />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/edit"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Deaths"
+                android:id="@+id/sa2"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:layout_marginLeft="0dp"
+                android:textSize="20sp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6,546,842"
+                android:textAlignment="center"
+                android:id="@+id/totaldeaths"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#43E272"
+                android:layout_marginLeft="30dp"
+                android:textSize="30sp"
+                android:gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/edit"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Recovered"
+                android:id="@+id/sa3"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:layout_marginLeft="0dp"
+                android:textSize="20sp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6,546,842"
+                android:textAlignment="center"
+                android:id="@+id/totalrecovered"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#43E272"
+                android:layout_marginLeft="30dp"
+                android:textSize="30sp"
+                android:gravity="center_horizontal" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".ui.assesment.assesmentTools">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to"
+            android:textColor="#fff"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Self Assesment Tools"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/loadTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Start Assesment Now" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Below is the history of tests taken by users"
+            android:textColor="#fff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="on our app. This knowledge base helps in"
+            android:textColor="#fff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="understanding which symptoms are more"
+            android:textColor="#fff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="common among people."
+            android:textColor="#fff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroudcolorofapp"
+            android:gravity="center"
+            android:text="FEVER"
+            android:padding="20dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="4"
+            android:background="@color/backgroudcolorofapp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="YES"
+                android:layout_weight="1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/fyes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="NO"
+
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/fno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroudcolorofapp"
+            android:gravity="center"
+            android:text="COUGH"
+            android:padding="20dp"
+
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="4"
+            android:background="@color/backgroudcolorofapp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="YES"
+
+                android:layout_weight="1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/coyes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="NO"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/cono"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_marginRight="80dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroudcolorofapp"
+            android:gravity="center"
+            android:text="SUDDEN TIREDNESS"
+            android:padding="20dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="4"
+            android:background="@color/backgroudcolorofapp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="YES"
+                android:layout_weight="1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/tiyes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="NO"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/tino"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_marginRight="80dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroudcolorofapp"
+            android:gravity="center"
+            android:text="SORE THROAT"
+            android:padding="20dp"
+
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="4"
+            android:background="@color/backgroudcolorofapp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="YES"
+                android:layout_weight="1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/soyes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="NO"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/sono"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroudcolorofapp"
+            android:gravity="center"
+            android:text="MUSCLE ACHES"
+            android:padding="20dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="4"
+            android:background="@color/backgroudcolorofapp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="YES"
+                android:layout_weight="1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/muyes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="NO"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/muno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroudcolorofapp"
+            android:gravity="center"
+            android:text="LOSS OF TASTE OR SMELL"
+            android:padding="20dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="4"
+            android:background="@color/backgroudcolorofapp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="YES"
+                android:layout_weight="1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/loyes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="NO"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/lono"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_marginRight="80dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroudcolorofapp"
+            android:gravity="center"
+            android:text="DIARRHEA"
+            android:padding="20dp"
+
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="4"
+            android:background="@color/backgroudcolorofapp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="YES"
+                android:layout_weight="1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/diyes"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="NO"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/dino"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroudcolorofapp"
+            android:gravity="center"
+            android:text="SUDDEN SHORTNESS OF BREATH"
+            android:padding="20dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="4"
+            android:background="@color/backgroudcolorofapp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="YES"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/sbyes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="NO"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/sbno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroudcolorofapp"
+            android:gravity="center"
+            android:text="SHARP CHEST PAIN"
+            android:padding="20dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="4"
+            android:background="@color/backgroudcolorofapp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="YES"
+                android:layout_weight="1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/cpyes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="NO"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/cpno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_marginRight="80dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/backgroudcolorofapp"
+            android:gravity="center"
+            android:text="LOSS OF SENSATION OR MOVEMENT"
+            android:padding="20dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="4"
+            android:background="@color/backgroudcolorofapp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="YES"
+                android:layout_weight="1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/smyes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="NO"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/smno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_marginRight="80dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
+</ScrollView>

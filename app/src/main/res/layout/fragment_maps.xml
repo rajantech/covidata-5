@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.map.MapsFragment" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        tools:context=".ui.map.MapsFragment" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/countryname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Country Name"
+                android:textAlignment="center"
+                android:textColor="@color/textGreenColor"
+                android:textSize="25sp" />
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Confirmed Cases"
+                    android:id="@+id/sa"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6,546,842"
+                    android:textAlignment="center"
+                    android:id="@+id/totalCases"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+
+                    android:textColor="#43E272"
+
+                    android:layout_marginLeft="30dp"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_toLeftOf="@id/increament"
+                        android:text="Today Increament: "
+                        android:textColor="#43E272"
+                        android:textSize="17sp"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/newCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/todayNewCases"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:text="656565"
+                        android:textColor="#43E272"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Deaths"
+
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6,546,842"
+                    android:textAlignment="center"
+                    android:id="@+id/totalDeaths"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#43E272"
+
+                    android:layout_marginLeft="30dp"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_toLeftOf="@id/increament"
+                        android:text="Today Increament: "
+                        android:textColor="#43E272"
+                        android:textSize="17sp"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/newdeaths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/todayNewCases"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:text="656565"
+                        android:textColor="#43E272"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Recovered"
+
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6,546,842"
+                    android:textAlignment="center"
+                    android:id="@+id/totalRecovered"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+
+                    android:textColor="#43E272"
+
+                    android:layout_marginLeft="30dp"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Active Cases"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6,546,842"
+                    android:textAlignment="center"
+                    android:id="@+id/activecases"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#43E272"
+
+                    android:layout_marginLeft="30dp"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Critical"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6,546,842"
+                    android:textAlignment="center"
+                    android:id="@+id/totalCritical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#43E272"
+
+                    android:layout_marginLeft="30dp"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cases Per One Million"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6,546,842"
+                    android:textAlignment="center"
+                    android:id="@+id/casesperonemillion"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#43E272"
+
+                    android:layout_marginLeft="30dp"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deaths Per One Million"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6,546,842"
+                    android:textAlignment="center"
+                    android:id="@+id/deathsperonemillion"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#43E272"
+
+                    android:layout_marginLeft="30dp"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Tests"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6,546,842"
+                    android:textAlignment="center"
+                    android:id="@+id/totaltests"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#43E272"
+
+                    android:layout_marginLeft="30dp"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/edit"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Tests Per One Million"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6,546,842"
+                    android:textAlignment="center"
+                    android:id="@+id/totaltestsperonemillion"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#43E272"
+
+                    android:layout_marginLeft="30dp"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

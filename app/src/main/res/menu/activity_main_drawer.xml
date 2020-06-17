@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/mapps"
+            android:title="Map" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/country"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/indiaflag"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/canadaflagsequ"
+            android:title="@string/menu_tools" />
+
+        <item
+            android:id="@+id/nav_assesment"
+            android:icon="@drawable/assesment"
+            android:title="Assesment Tool" />
+
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/news"
+            android:title="News" />
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/safety"
+                android:title="Safety Guideines" />
+
+        </menu>
+    </item>
+
+</menu>

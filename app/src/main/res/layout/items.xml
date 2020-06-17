@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/relativeLayout"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/edit"
+    android:weightSum="10"
+    >
+
+
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:id="@+id/flagOfCountry"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:layout_gravity="center"
+        android:src="@drawable/circle"
+        />
+    <TextView
+        android:layout_weight="4.5"
+        android:id="@+id/country"
+        android:layout_width="0dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="This Is  a task"
+
+        />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="56565"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/newCases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/textGreenColor"
+            android:text="+567"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

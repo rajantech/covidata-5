@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.covidata.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.covidata.ui.map.MapsFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.covidata.ui.countries.CountriesFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_countries" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.covidata.ui.indiastate.IndianStatesFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_indianstates" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.covidata.ui.canadaData.canadaData"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_indianstates" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.example.covidata.ui.news.newsFragment"
+        android:label="COVID NEWS"
+        tools:layout="@layout/fragment_news" />
+
+
+    <fragment
+        android:id="@+id/nav_assesment"
+        android:name="com.example.covidata.ui.assesment.assesmentTools"
+        android:label="Assesment Tool"
+        tools:layout="@layout/fragment_assesment_tools" />
+
+
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.covidata.ui.about.aboutFragment"
+        android:label="Safety Guideines"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.covidata.ui.contact.contactFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_contact" />
+</navigation>
