@@ -78,13 +78,6 @@ public class HomeFragment extends Fragment {
                             JSONObject jsonObject1= jsonObject.getJSONObject("Global");
 
 
-                            Toast.makeText(getContext(),jsonObject1.getString("TotalConfirmed"),Toast.LENGTH_LONG).show();
-                            Toast.makeText(getContext(),jsonObject1.getString("TotalDeaths"),Toast.LENGTH_LONG).show();
-                            Toast.makeText(getContext(),jsonObject1.getString("TotalRecovered"),Toast.LENGTH_LONG).show();
-                            Toast.makeText(getContext(),jsonObject1.getString("NewConfirmed"),Toast.LENGTH_LONG).show();
-                            Toast.makeText(getContext(),jsonObject1.getString("NewDeaths"),Toast.LENGTH_LONG).show();
-
-
 
                            confirmed.setText(jsonObject1.getString("TotalConfirmed"));
                             pieData.add(new SliceValue(Float.valueOf(jsonObject1.getString("TotalConfirmed")), Color.rgb(226,116,48)).setLabel("TotalConfirmed"));
