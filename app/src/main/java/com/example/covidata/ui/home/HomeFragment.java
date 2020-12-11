@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -39,12 +40,12 @@ public class HomeFragment extends Fragment {
     private ArrayList<String> mImageURLs= new ArrayList<>();
     private ArrayList<String> sub = new ArrayList<>();
 
-    TextView confirmed, deceased, infected, recovered, tested,todayNewCases,todaydeath, totalSerius;
+    TextView confirmed, deceased, infected, recovered,todayNewCases,todaydeath;
     PieChartView pieChartView;
     StringRequest stringRequest;
     RequestQueue requestQueue;
     List pieData = new ArrayList<>();
-    String url="https://api.thevirustracker.com/free-api?global=stats";
+    String url="https://api.covid19api.com/summary";
 
     private HomeViewModel homeViewModel;
 
@@ -58,10 +59,8 @@ public class HomeFragment extends Fragment {
             deceased = root.findViewById(R.id.totalDeceased);
             infected= root.findViewById(R.id.totalInfected);
             recovered= root.findViewById(R.id.totalRecovered);
-            tested= root.findViewById(R.id.totalTested);
             todayNewCases = root.findViewById(R.id.todayNewCases);
             todaydeath = root.findViewById(R.id.todayDeath);
-            totalSerius = root.findViewById(R.id.totalSerious);
             pieChartView = root.findViewById(R.id.chart);
 
 
@@ -70,42 +69,54 @@ public class HomeFragment extends Fragment {
                 requestQueue = Volley.newRequestQueue(getContext());
 
 
-                stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+                stringRequest = new StringRequest(Request.Method.GET, "https://api.covid19api.com/summary", new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
 
                         try {
                             JSONObject jsonObject = new JSONObject(response);
-                            JSONArray jsonArray = jsonObject.getJSONArray("results");
-
-                            JSONObject jsonObject2 = jsonArray.getJSONObject(0);
+                            JSONObject jsonObject1= jsonObject.getJSONObject("Global");
 
 
-                            confirmed.setText(jsonObject2.getString("total_cases"));
-                            pieData.add(new SliceValue(Float.valueOf(jsonObject2.getString("total_cases")), Color.rgb(226,116,48)).setLabel("Total Cases"));
+                            Toast.makeText(getContext(),jsonObject1.getString("TotalConfirmed"),Toast.LENGTH_LONG).show();
+                            Toast.makeText(getContext(),jsonObject1.getString("TotalDeaths"),Toast.LENGTH_LONG).show();
+                            Toast.makeText(getContext(),jsonObject1.getString("TotalRecovered"),Toast.LENGTH_LONG).show();
+                            Toast.makeText(getContext(),jsonObject1.getString("NewConfirmed"),Toast.LENGTH_LONG).show();
+                            Toast.makeText(getContext(),jsonObject1.getString("NewDeaths"),Toast.LENGTH_LONG).show();
 
-                            deceased.setText(jsonObject2.getString("total_deaths"));
-                            pieData.add(new SliceValue(Float.valueOf(jsonObject2.getString("total_deaths")), Color.RED).setLabel("Total Deaths"));
 
-                            infected.setText(jsonObject2.getString("total_serious_cases"));
-                         //   pieData.add(new SliceValue(Float.valueOf(jsonObject2.getString("total_active_cases")), Color.DKGRAY).setLabel("Total Active Cases"));
 
-                            recovered.setText(jsonObject2.getString("total_recovered"));
-                            pieData.add(new SliceValue(Float.valueOf(jsonObject2.getString("total_recovered")), Color.GREEN).setLabel("Total Recovered"));
+                           confirmed.setText(jsonObject1.getString("TotalConfirmed"));
+                            pieData.add(new SliceValue(Float.valueOf(jsonObject1.getString("TotalConfirmed")), Color.rgb(226,116,48)).setLabel("TotalConfirmed"));
 
-                            tested.setText(jsonObject2.getString("total_affected_countries"));
+                            deceased.setText(jsonObject1.getString("TotalDeaths"));
+                            pieData.add(new SliceValue(Float.valueOf(jsonObject1.getString("TotalDeaths")), Color.RED).setLabel("Total Deaths"));
 
-                            todayNewCases.setText("+"+jsonObject2.getString("total_new_cases_today"));
 
-                            todaydeath.setText("+"+jsonObject2.getString("total_new_deaths_today"));
+                           recovered.setText(jsonObject1.getString("TotalRecovered"));
+                            pieData.add(new SliceValue(Float.valueOf(jsonObject1.getString("TotalRecovered")), Color.GREEN).setLabel("Total Recovered"));
 
-                            totalSerius.setText(jsonObject2.getString("total_active_cases"));
-                            pieData.add(new SliceValue(Float.valueOf(jsonObject2.getString("total_serious_cases")), Color.BLUE).setLabel("Seroius Cases"));
+
+
+                           todayNewCases.setText("+"+jsonObject1.getString("NewConfirmed"));
+
+                            todaydeath.setText("+"+jsonObject1.getString("NewDeaths"));
+
+
+
+                           int totalactive;
+
+                           totalactive=(Integer.parseInt(jsonObject1.getString("TotalConfirmed"))-Integer.parseInt(jsonObject1.getString("TotalRecovered")));
+
+                                String seriouscases=String.valueOf(totalactive);
+                            infected.setText(seriouscases);
+                            pieData.add(new SliceValue(Float.valueOf(seriouscases), Color.BLUE).setLabel("Seroius Cases"));
 
                                         drawPiechart();
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(getContext(),"catch",Toast.LENGTH_LONG).show();
                         }
 
 
@@ -113,6 +124,7 @@ public class HomeFragment extends Fragment {
                 }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(getContext(),"Volley Error",Toast.LENGTH_LONG).show();
 
                     }
                 });
